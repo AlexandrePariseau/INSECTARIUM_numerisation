@@ -135,34 +135,33 @@
 8. *Batch mode* (en haut au milieu de l’interface) : ***Rename***
 9. Cliquer sur *Start batch*.
 
-MODÉLISATION
+# 7. MODÉLISATION
 
-Dans Metashape (v2.2.2)
+### Dans Metashape (v2.2.2)
 
-Ouvrir l’onglet “Reference” en bas à gauche de l’interface, puis le bouton “Settings” (Marteau et clé anglaise)
-Dans la fenêtre qui s’ouvre, dans “Coordinate System”, choisir “Custom”
-Dans l’autre fenêtre qui s’ouvre, cliquer sur le bouton “Load” (la filière) puis sélectionner le fichier “local-coordinates-mm.prj”
-Ok
-Onglet “Workflow”, “Add folder”, sélectionner le dossier “edof_exported”
-Dans la fenêtre qui s’ouvre, “Please select data layout : Single cameras”
+1. Ouvrir l’onglet “Reference” en bas à gauche de l’interface, puis le bouton “Settings” (Marteau et clé anglaise)
+2. Dans la fenêtre qui s’ouvre, dans “Coordinate System”, choisir “Custom”
+3. Dans l’autre fenêtre qui s’ouvre, cliquer sur le bouton “Load” (la filière) puis sélectionner le fichier “local-coordinates-mm.prj”
+4. Onglet “Workflow”, “Add folder”, sélectionner le dossier “edof_exported”
+5. Dans la fenêtre qui s’ouvre, “Please select data layout : Single cameras”
 
-Si vous avez accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
+### Option 1 : Si vous avez accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
 
-Menu “File”, “Import”, “Import cameras”, sélectionner le fichier .xml dans le dossier de Pose Sphere qui correspond à l’échelle de photographie utilisée (ex. si vous utilisez l’échelle XS avec un stepsize de 10 entre les photos, sélectionnez le fichier qui contient dans son nom “PoseSphere-XS_step10”; ce fichier se trouve dans un dossier éponyme dans le dossier des scans
-Dans la fenêtre qui s’ouvre : 
-Accuracy : Highest
-Generic preselection : oui
-Reference preselection : oui
-Keypoint limit : 250 000
-Tie point limit : 250 000
-Guided image matching : non
-Exclude stationary tie points : oui
-Menu “Tools”, “Optimize cameras”, cocher “Fit f” seulement
+6. Menu “File”, “Import”, “Import cameras”, sélectionner le fichier .xml dans le dossier de Pose Sphere qui correspond à l’échelle de photographie utilisée (ex. si vous utilisez l’échelle XS avec un stepsize de 10 entre les photos, sélectionnez le fichier qui contient dans son nom “PoseSphere-XS_step10”; ce fichier se trouve dans un dossier éponyme dans le dossier des scans
+7. Dans la fenêtre qui s’ouvre :
+8. Accuracy : Highest
+9. Generic preselection : oui
+10. Reference preselection : oui
+11. Keypoint limit : 250 000
+12. Tie point limit : 250 000
+13. Guided image matching : non
+14. Exclude stationary tie points : oui
+15. Menu “Tools”, “Optimize cameras”, cocher “Fit f” seulement
 
-Si vous n’avez PAS accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
+### Option 2 : Si vous n’avez PAS accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
 
-Ouvrir le fichier “ScanInformation.pdf”
-Copier la valeur à la ligne “2.4. Camera Constant/f [px]:”
+16. Ouvrir le fichier “ScanInformation.pdf”
+17. Copier la valeur à la ligne “2.4. Camera Constant/f [px]:”
 Menu “Tools”, “Camera Calibration”
 Dans la fenêtre qui s’ouvre : 
 Changer “Mode : Auto” à “Precalibrated”
