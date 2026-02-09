@@ -41,25 +41,25 @@
 15. Ajuster le `Exposure Time` et `Gain` de sorte que les points blancs de la cible paraissent en vert très pâle et soient légèrement surexposés;
 16. Une fois que tous les points sont verts et que la boîte de texte flottante affiche `*Found 48 / 48`, ajuster la hauteur de la caméra (comme tout à l’heure) et la position gauche-droite (à l’aide des petites vis situées juste au dessus de la caméra, là où il est écrit *Translation vers la…*) de sorte à ce que la croix rouge du logiciel (bouton `Alignment` à droite) soit alignée avec la croix verte qui apparait être les points de la cible;
 17. Appuyer sur `Start calibration`;
-18. Une fenêtre *ANGLE ERROR* apparaît en haut à gauche : si les indicateurs sont à + ou - 0.05, sautez à l'étape **2.21**. Sinon, pour ajuster la valeur horizontale, ajuster les petites vis jaunes qui se trouvent derrière le rail motorisé (nommées *Droite* et *Gauche*), et pour la valeur horizontale, ajuster les petites vis jaunes plus hautes (nommées *Haut* et *Bas*). Pour serrer une vis, il faut desserrer celle du côté opposé;
+18. Une fenêtre *ANGLE ERROR* apparaît en haut à gauche : si les indicateurs sont à + ou - 0.05, sautez à l'étape **2.22**. Sinon, pour ajuster la valeur horizontale, ajuster les petites vis jaunes qui se trouvent derrière le rail motorisé (nommées *Droite* et *Gauche*), et pour la valeur horizontale, ajuster les petites vis jaunes plus hautes (nommées *Haut* et *Bas*). Pour serrer une vis, il faut desserrer celle du côté opposé;
 19. Ensuite, ajuster la hauteur et la translation gauche-droite de la caméra pour que la croix rouge soit à nouveau alignée à la croix verte;
 20. Appuyer sur `Recalibrate`, puis `Start calibration`;
-21. Répéter les étapes **2.16** à **2.19** autant de fois que nécessaire.
+21. Répéter les étapes **2.17** à **2.1209** autant de fois que nécessaire.
 22. Tout est ok et vous pouvez cliquer sur `Accept`.
 
 # 3. NUMÉRISATION
 
 1. Mettre l’ouverture à F5.6;
 2. Cliquer sur le menu **Scan** à gauche;
-3. Dans l’onglet **Imaging**, mettre le *Frontlight* à 50%, et le *Backlight* à 100%;
-4. Ajuster le *Exposure Time* et *Gain* pour que le spécimen soit bien éclairé mais pas saturé;
+3. Dans l’onglet **Imaging**, mettre le `Frontlight` à 50%, et le `Backlight` à 100%;
+4. Ajuster le `Exposure Time` et `Gain` pour que le spécimen soit bien éclairé mais pas saturé;
 5. Ne rien changer dans l’onglet **Image Processing** (tout doit être à off);
-6. Onglet **3D Scan**, *Pose Programs* → *360 deg delta = 10 deg*;
-7. *Azimuth Release Time* et *Elevation Release Time* → 2 sec;
-8. *Directory* → choisir le dossier où vous souhaitez sauvegarder votre scan;
-9. *Name* → copier-coller le nom du dossier;
+6. Onglet **3D Scan**, `Pose Programs` → `360 deg delta = 10 deg`;
+7. `Azimuth Release Time` et `Elevation Release Time` → 2 sec;
+8. `Directory` → choisir le dossier où vous souhaitez sauvegarder votre scan;
+9. `Name` → copier-coller le nom du dossier;
 10. Ferme les portes du scanneur;
-11. Appuyer sur *Start scan*.
+11. Appuyer sur `Start scan`.
 
 # 4. RENOMMER LES PHOTOS EN VUE DU TRAITEMENT
 
@@ -69,15 +69,15 @@
 
 2. Ajouter toutes les photos du dossier *edof_renamed*
 3. Ajouter la méthode **Remove**, avec les paramètres suivants :
-    - *Remove type* → ***Position***
-    - *Starting at* → ***11***
-    - *Count* → ***12 (ou plus)***
-    - *Backwards* → ***off***
-    - *Case sensitive* → ***off***
-    - *Use regular expressions* → ***off***
-    - *Apply to* → ***Name***
+    - *Remove type* → `Position`
+    - *Starting at* → `11`
+    - *Count* → `12 (ou plus)`
+    - *Backwards* → `off`
+    - *Case sensitive* → `off`
+    - *Use regular expressions* → `off`
+    - *Apply to* → `Name`
     - Appuyer sur Ok.
-4. *Batch mode* → *Rename*
+4. *Batch mode* → `Rename`
 5. Cliquer sur *Start batch*.
 
 # 5. TRAITEMENT DES PHOTOS
@@ -87,39 +87,39 @@
 1. Créer un nouveau projet;
 2. Onglet **Media**;
 3. Dans le navigateur de fichiers, trouver le dossier des photos précédemment renommées (*edof_renamed*);
-4. Cliquer sur les trois points en haut à droite de la fenêtre de recherche de fichiers, sélectionner *Frame display mode → Sequence*;
+4. Cliquer sur les trois points en haut à droite de la fenêtre de recherche de fichiers, sélectionner `Frame display mode` → `Sequence`;
 5. Glisser la séquence d’image dans le *Media pool*;
 6. Onglet **Edit**;
 7. Sélectionner la séquence d’images et la glisser-déposer dans la timeline;
-8. Cliquer sur la roue dentée en bas à droite de l’interface, ce qui ouvre les paramètres de projet. *Timeline resolution* → *Custom* → *4096 x 3008* → *Save* (en bas à droite de la page);
+8. Cliquer sur la roue dentée en bas à droite de l’interface, ce qui ouvre les paramètres de projet. `Timeline resolution` → `Custom` → `4096 x 3008` → `Save` (en bas à droite de la page);
 9. Onglet **Fusion**;
 10. Menu *Effects* en haut à gauche;
-11. Bouton loupe, chercher *Delta Keyer*;
-12. Placer l'effet entre les nodes *MediaIn* et *MediaOut*;
-13. *Background color* à droite → *Pick screen color* pour sélectionner la couleur de la couleur de fond. Sinon, notez la valeur hexadécimale quand vous placez le curseur sur le fond;
-14. Dans les options de **Delta Keyer**, ajuster les valeurs *Red*, *Green* et *Blue* à droite pour minimiser les couleurs de fonds et maximiser la préservation des détails;
+11. Bouton loupe, chercher `Delta Keyer`;
+12. Placer l'effet entre les nodes `MediaIn` et `MediaOut`;
+13. `Background color` à droite → `Pick screen color` pour sélectionner la couleur de la couleur de fond. Sinon, notez la valeur hexadécimale quand vous placez le curseur sur le fond;
+14. Dans les options de **Delta Keyer**, ajuster les valeurs `Red`, `Green` et `Blue` à droite pour minimiser les couleurs de fonds et maximiser la préservation des détails;
 15. Dans les effets, chercher *Color Corrector* et ajouter à la chaîne d'effets;
-16. Ajuster le *gamma* et la *saturation*, ainsi que le *hue* si nécessaire;
-17. Dans les effets, chercher *Sharpen* et ajouter à la chaîne d'effets;
+16. Ajuster le `gamma` et la `saturation`, ainsi que le `hue` si nécessaire;
+17. Dans les effets, chercher `Sharpen` et ajouter à la chaîne d'effets;
 18. Ajuster légèrement (généralement, entre 0.1 et 0.2);
 19. Cliquer sur l’onglet **Deliver**;
-20. Cliquer sur *Browse* à droite de *Location* pour choisir le dossier où vous souhaitez exporter les photos (idéalement, un dossier nommé *edof_exported*)
-21. À la ligne *Render* → *Individual clips*
+20. Cliquer sur `Browse` à droite de `Location` pour choisir le dossier où vous souhaitez exporter les photos (idéalement, un dossier nommé *edof_exported*)
+21. À la ligne `Render` → `Individual clips`
 22. Juste en dessous, dans l’onglet **Video**, choisir :
-    - *Format* → ***PNG***
-    - *Codec* → ***RGB 8 bits***
-    - *Render at source resolution* → ***yes***
-    - *Export alpha* → ***yes***
-    - *Alpha* : ***Premultiplied***
-    - *Compression level* → ***0***
+    - *Format* → `PNG`
+    - *Codec* → `RGB 8 bits`
+    - *Render at source resolution* → `yes`
+    - *Export alpha* → `yes`
+    - *Alpha* : `Premultiplied`
+    - *Compression level* → `0`
     - *Advanced settings*
-      - *Data levels* → ***Full***
+      - *Data levels* → `Full`
     - Appuyer sur Ok.
-23. Cliquer sur l’onglet **File** qui est à droite de *Audio* et *Video* un peu plus haut :
-    - *Filename uses* → Source name
-    - *Use … digits in the filename* → 1
-    - Cliquer sur *Add to Render Queue*
-24. En haut à droite, dans la fenêtre **Render Queue** → *Render All*;
+23. Cliquer sur l’onglet **File** qui est à droite de `Audio` et `Video` un peu plus haut :
+    - *Filename uses* → `Source name`
+    - *Use … digits in the filename* → `1`
+    - Cliquer sur `Add to Render Queue`
+24. En haut à droite, dans la fenêtre **Render Queue** → `Render All`;
 25. Si les photos sont bien exportées, effacer le dossier *edof_renamed*.
 
 # 6. RENOMMER LES PHOTOS APRÈS L'EXPORTATION
@@ -129,73 +129,73 @@
 1. Importer les photos du dossier *edof*;
 2. Sélectionner tous les fichiers dans la liste;
 3. Clic-droit, **Export**, puis dans la fenêtre qui s’ouvre : 
-    - *Format* → ***Text***
+    - *Format* → `Text`
     - *Filename* → cliquer sur les trois petits points pour déterminer le dossier où le fichier sera enregistré, et indiquer un nom de fichier (*edof_filenames*)
-    - *File encoding* → ***UTF-8***
-    - *Export field* → ***Filename***
+    - *File encoding* → `UTF-8`
+    - *Export field* → `Filename`
 4. Fermer Advanced Renamer, réouvrir;
 5. Importer les photos du dossier *edof_exported*;
-6. Ajouter comme méthode **List** :
-    - Dans *List*, cliquer sur *Load list*, et sélectionner le fichier texte exporté précédemment
-    - *Apply to* → ***Name***
-7. Ajouter comme méthode **Remove pattern** :
-    - “Pattern” → .png
-8. *Batch mode* → ***Rename***
-9. Cliquer sur *Start batch*.
+6. Ajouter comme méthode `List` :
+    - Dans `List`, cliquer sur `Load list`, et sélectionner le fichier texte exporté précédemment
+    - *Apply to* → `Name`
+7. Ajouter comme méthode `Remove pattern` :
+    - *Pattern* → `.png`
+8. *Batch mode* → `Rename`
+9. Cliquer sur `Start batch`.
 
 # 7. MODÉLISATION
 
 ### Dans Metashape (v2.2.2)
 
 1. Onglet **Reference** en bas à gauche de l’interface, puis le bouton *Settings* (Marteau et clé anglaise);
-2. Dans la fenêtre qui s’ouvre, dans *Coordinate System* → ***Custom***
-3. Dans l’autre fenêtre qui s’ouvre, cliquer sur le bouton *Load* (la filière) puis sélectionner le fichier *local-coordinates-mm.prj*;
-4. Onglet **Workflow**, *Add folder*, sélectionner le dossier *edof_exported*;
-5. Dans la fenêtre qui s’ouvre, *Please select data layout* → ***Single cameras***.
+2. Dans la fenêtre qui s’ouvre, dans `Coordinate System` → `Custom`
+3. Dans l’autre fenêtre qui s’ouvre, cliquer sur le bouton `Load` (la filière) puis sélectionner le fichier `local-coordinates-mm.prj`;
+4. Onglet **Workflow**, `Add folder`, sélectionner le dossier *edof_exported*;
+5. Dans la fenêtre qui s’ouvre, `Please select data layout` → `Single cameras`.
 
 ### Option 1 : Si vous avez accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
 
-6. Menu **File**, *Import*, *Import cameras*, sélectionner le fichier .xml dans le dossier de Pose Sphere qui correspond à l’échelle de photographie utilisée;
+6. Menu **File** → `Import` → `Import cameras`, sélectionner le fichier .xml dans le dossier de Pose Sphere qui correspond à l’échelle de photographie utilisée;
 > Ex. si vous utilisez l’échelle XS avec un stepsize de 10 entre les photos, sélectionnez le fichier qui contient dans son nom *PoseSphere-XS_step10*; ce fichier se trouve dans un dossier éponyme dans le dossier des scans.
 7. Dans la fenêtre qui s’ouvre :
-    - *Accuracy* → ***Highest***
-    - *Generic preselection* → ***yes***
-    - *Reference preselection* → ***yes***
-    - *Keypoint limit* → ***250 000***
-    - *Tie point limit* → ***250 000***
-    - *Guided image matching* → ***no***
-    - *Exclude stationary tie points* → ***yes***
+    - *Accuracy* → `Highest`
+    - *Generic preselection* → `yes`
+    - *Reference preselection* → `yes`
+    - *Keypoint limit* → `250,000`
+    - *Tie point limit* → `250,000`
+    - *Guided image matching* → `no`
+    - *Exclude stationary tie points* → `yes`
     - Appuyer sur Ok.
-8. Menu **Tools**, *Optimize cameras*, cocher ***Fit f*** seulement.
+8. Menu **Tools** → `Optimize cameras` → cocher `Fit f` seulement.
 
 ### Option 2 : Si vous n’avez PAS accès à un fichier “Pose_Sphere_XX_Cameras.xml” pour la configuration choisie : 
 
 9. Ouvrir le fichier *ScanInformation.pdf*;
-10. Copier la valeur à la ligne *2.4. Camera Constant/f [px]:*;
+10. Copier la valeur à la ligne `2.4. Camera Constant/f [px]:`;
 11. Menu **Tools* → *Camera Calibration* :
-    - *Mode* → ***Precalibrated***
-    - Coller la valeur *Camera Constant/f* à la ligne ***f***
-    - Bouton *Fixed Parameters*, cocher *Check all* puis décocher *f*; fermer la fenêtre
+    - *Mode* → `Precalibrated`
+    - Coller la valeur copiée ci-haut à la ligne `f`
+    - Bouton `Fixed Parameter`, cocher `Check all` puis décocher `f`; fermer la fenêtre
     - Appuyer sur Ok.
 12. Menu **File**, *Import*, *Import Reference* : 
-    - *Coordinate system* → ***Local coordinates (mm)***
-    - *Delimiter* → ***Space***
-    - *Column Labels* →  ***Label : 1***, ***X : 2***, ***Y : 3*** et ***Z : 4***
-    - *Accuracy* → ***no*** (les DEUX champs *Accuracy*)
-    - *Rotation* → ***no***
+    - *Coordinate system* → `Local coordinates (mm)`
+    - *Delimiter* → `Space`
+    - *Column Labels* →  `Label : 1`, `X : 2`, `Y : 3` et `Z : 4`
+    - *Accuracy* → `no` (les DEUX champs *Accuracy*)
+    - *Rotation* → `no`
     - Appuyer sur Ok.
 13. Menu **Workflow**, *Align Photos* :
-    - *Accuracy* → ***Highest***
-    - *Generic Preselection* → ***yes**
-    - *Reference Preselection* → ***yes, Source***
+    - *Accuracy* → `Highest`
+    - *Generic Preselection* → `yes`
+    - *Reference Preselection* → `yes, Source`
 > Si l'option *Reference Preselection* est grise, c’est que vos photos sont mal nommées; revoir les étapes de renommage.
-    - *Advanced* :
-      - *Key Point Limit* → ***250,000***
-      - *Tie Point Limit* → ***250,000***
-      - *Exclude Stationary Points* → ***yes***
-      - *Guided Image Matching* → ***no***
-      - *Adaptive Camera Model Fitting* → ***no***
-14. Menu **Tools**, *Optimize cameras*, cocher ***f*** seulement. Refaire au besoin si le nuage de points a l’air flou.
+    - `Advanced` :
+      - *Key Point Limit* → `250,000`
+      - *Tie Point Limit* → `250,000`
+      - *Exclude Stationary Points* → `yes`
+      - *Guided Image Matching* → `no`
+      - *Adaptive Camera Model Fitting* → `no`
+14. Menu **Tools**, `Optimize cameras`, cocher `f` seulement. Refaire au besoin si le nuage de points a l’air flou.
 
 ### Suite dans Metashape
 
@@ -203,53 +203,53 @@
 16. Ajuster la taille du bloc pour contenir tout juste le spécimen;
 17. Sélectionner l’onglet *Workspace* en bas à gauche de *Reference*, clique-droit sur *Chunk1* → **Duplicate** (je ne sais pas pourquoi cette étape, mais faites-le quand même)
 18. Menu **Tools**, *Tie Points*, *Clean Tie Points* :
-    - *Criterion* → ***Reprojection Error***
-    - Dans le champs “Level”, mettre le curseur à un endroit où le nombre de Tie points sélectionnés correspond à environ 10% du nombre total de Tie points
+    - *Criterion* → `Reprojection Error`
+    - Dans le champs `Level`, mettre le curseur à un endroit où le nombre de Tie points sélectionnés correspond à environ 10% du nombre total de Tie points
     > Dans la fenêtre d’affichage 3D, vous voyez un chiffre en bas à gauche, soit le nombre de Tie points. Juste à droite de ce chiffre, un autre chiffre qui montre le nombre de Tie points sélectionnés
     - Ok
 19. Supprimer les points sélectionnés;
 20. Deuxième fois, Menu **Tools**, *Tie Points*, *Clean Tie Points* :
-    - Criterion → Projection accuracy
-    - Dans le champs “Level”, mettre le curseur à un endroit où le nombre de Tie points sélectionnés correspond à environ 10% du nombre total de Tie points
+    - Criterion → `Projection accuracy`
+    - Dans le champs `Level`, mettre le curseur à un endroit où le nombre de Tie points sélectionnés correspond à environ 10% du nombre total de Tie points
     > Dans la fenêtre d’affichage 3D, vous voyez un chiffre en bas à gauche, soit le nombre de Tie points. Juste à droite de ce chiffre, un autre chiffre qui montre le nombre de Tie points sélectionnés
     - Ok
 21. Supprimer les points sélectionnés;
 22. Menu **Workflow**, *Build Model* :
-    - *Source data* → ***Depth maps***
-    - *Quality* → ***Ultra high***
-    - *Face count* → ***High***
+    - *Source data* → `Depth maps`
+    - *Quality* → `Ultra high`
+    - *Face count* → `High`
     - *Advanced* : 
-      - *Interpolation* → ***Enabled***
-      - *Depth filtering* → ***Mild***
-      - *Calculate vertex color* :→ ***yes***
+      - *Interpolation* → `Enabled`
+      - *Depth filtering* → `Mild`
+      - *Calculate vertex color* :→ `yes`
 23. Menu **Tools**, *Model*, *Clean model* :
-    - *Criterion* → ***Connected Component Size***
-    - *Level* → ***99***
+    - *Criterion* → `Connected Component Size`
+    - *Level* → `99`
     - Ok
-24. Outil de sélection → ***Lasso*** → sélectionner autant que possible l'aiguille (pour les endroits difficile, cocher l'option `Visible Selection` dans le menu défilant de l'outil lasso) → supprimer les parties de l'aiguille sélectionnées;
+24. Outil de sélection (Lasso) → sélectionner autant que possible l'aiguille (pour les endroits difficile, cocher l'option `Visible Selection` dans le menu défilant de l'outil lasso) → supprimer les parties de l'aiguille sélectionnées;
 25. Menu **Tools**, *Close holes*;
 26. Menu **Workflow**, *Build Texture* :
-    - *Texture type* → ***Diffuse map***
-    - *Source data* → ***Images***
-    - *Mapping mode* → ***Generic***
-    - *Blending mode* → ***Mosaic***
-    - *Texture size* → ***8192***
-    - *Page count* → ***1***
-    - *Enable hole filling* → ***yes***
-    - *Enable ghosting filter* → ***yes***
+    - *Texture type* → `Diffuse map`
+    - *Source data* → `Images`
+    - *Mapping mode* → `Generic`
+    - *Blending mode* → `Mosaic`
+    - *Texture size* → `8192`
+    - *Page count* → `1`
+    - *Enable hole filling* → `yes`
+    - *Enable ghosting filter* → `yes`
 27. Menu **Workflow**, *Build Texture* une deuxième fois :
-    - *Texture type* → ***Occlusion Map***
-    - *Source Data* → ***3D Model***
-    - *Mapping mode* → ***Keep UV***
-    - *Texture size* → ***8192***
+    - *Texture type* → `Occlusion Map`
+    - *Source Data* → `3D Model`
+    - *Mapping mode* → `Keep UV`
+    - *Texture size* → `8192`
 28. Menu **Workflow**, *Build Point Cloud* :
-    - *Source data* → ***Depth maps***
-    - *Quality* → ***Ultra high***
-    - *Reuse depth maps* → ***yes***
-    - *Save project after each step* → ***no***
-    - *Depth filtering* → ***Mild***
-    - *Calculate point colors* → ***yes***
-    - *Calculate point confidence* → ***yes***
+    - *Source data* → `Depth maps`
+    - *Quality* → `Ultra high`
+    - *Reuse depth maps* → `yes`
+    - *Save project after each step* → `no`
+    - *Depth filtering* → `Mild`
+    - *Calculate point colors* → `yes`
+    - *Calculate point confidence* → `yes`
 29. Sauvegarder le projet Metashape.
 
 # 8. EXPORTATIONS ET TRAITEMENTS DES DONNÉES
@@ -259,46 +259,46 @@
 1. Menu **File**, *Export*, *Export Point Cloud* :
     - Choisir le type de fichier *Stanford PLY* puis nommer le fichier en lui donnant le suffixe ***_HIGH***
     - Dans la fenêtre qui s’ouvre :
-      - *Coordinate System* → ***Local Coordinates (mm)***
-      - *Convert color to 8 bit RGB* → ***yes***
-      - *Binary encoding* → ***yes***
-      - *Color* → ***yes***
-      - *Normal* → ***yes***
-      - *Classification* → ***yes***
-      - *Confidence* → ***yes***
+      - *Coordinate System* → `Local Coordinates (mm)`
+      - *Convert color to 8 bit RGB* → `yes`
+      - *Binary encoding* → `yes`
+      - *Color* → `yes`
+      - *Normal* → `yes`
+      - *Classification* → `yes`
+      - *Confidence* → `yes`
 2. Menu **File**, *Export*, *Export Cameras* :
     - Choisir le type de fichier *Colmap* puis nommer le fichier en lui donnant le suffixe ***_COLMAP***
     - Dans la fenêtre qui s’ouvre :
-      - *Coordinate System* → ***Local Coordinates (mm)***
-      - *Images* → ***no***
-      - *Tie points* → ***yes***
-      - *Transform to pinhole camera* → ***no***
-      - *Transform to initial calibration* → ***no***
-      - *Binary encoding* → ***yes***
-      - *Masks* → ***no***
-      - *Control points* → ***no***
-      - *Image name template* → ***{filename}_{filenum}.png***
+      - *Coordinate System* → `Local Coordinates (mm)`
+      - *Images* → `no`
+      - *Tie points* → `yes`
+      - *Transform to pinhole camera* → `no`
+      - *Transform to initial calibration* → `no`
+      - *Binary encoding* → `yes`
+      - *Masks* → `no`
+      - *Control points* → `no`
+      - *Image name template* → `{filename}_{filenum}.png`
 3. Menu **File**, *Export*, *Export Texture* :
-    - Choisir le type de fichier *png* puis nommer le fichier en lui donnant le suffixe ***_DIFFUSE***
+    - Choisir le type de fichier *png* puis nommer le fichier en lui donnant le suffixe `_DIFFUSE`
     - Dans la fenêtre qui s'ouvre :
-      - *Texture type* → ***Diffuse***
-      - *Save alpha channel* → ***yes***
+      - *Texture type* → `Diffuse`
+      - *Save alpha channel* → `yes`
 4. Deuxième fois, Menu **File**, *Export*, *Export Texture* :
-    - Choisir le type de fichier *png* puis nommer le fichier en lui donnant le suffixe ***_OCCLUSION***
+    - Choisir le type de fichier *png* puis nommer le fichier en lui donnant le suffixe `_OCCLUSION`
     - Dans la fenêtre qui s'ouvre :
-      - *Texture type* → ***Occlusion map***
-      - *Save alpha channel* → ***yes***
+      - *Texture type* → `Occlusion map`
+      - *Save alpha channel* → `yes`
 3. Menu **File**, *Export*, *Export Model* :
-    - Choisir le type de fichier *OBJ* puis nommer le fichier en lui donnant le suffixe ***_MODEL***
+    - Choisir le type de fichier *OBJ* puis nommer le fichier en lui donnant le suffixe `_MODEL`
     - Dans la fenêtre qui s'ouvre :
-      - *Coordinate System* → ***Local Coordinates (mm)***
-      - *Vertex colors* → ***yes***
-      - *Vertex normals* → ***yes***
-      - *Export texture* → ***PNG***
-      - *Include comment* → ***no***
-      - *Use UDIM texture layout* → ***yes***
-      - *Save alpha channel* → ***yes***
-      - *Write metadata .XML file* → ***no***
+      - *Coordinate System* → `Local Coordinates (mm)`
+      - *Vertex colors* → `yes`
+      - *Vertex normals* → `yes`
+      - *Export texture* → `PNG`
+      - *Include comment* → `no`
+      - *Use UDIM texture layout* → `yes`
+      - *Save alpha channel* → `yes`
+      - *Write metadata .XML file* → `no`
 3. Fermer Metashape.
 
 ### Dans Cloud Compare
@@ -307,8 +307,8 @@
 5. Dans le fenêtre qui s’ouvre, cliquer sur *Apply*;
 6. Sélectionner le modèle importé, dans la fenêtre de gauche;
 7. Cliquer sur le bouton *Subsample a point cloud* (amas de points);
-    - *method* → ***Octree***
-    - *subdivision level* → ***11***
+    - *method* → `Octree`
+    - *subdivision level* → `11`
     - Ok
 9. Cliquer sur le bouton *Save current entity* (disquette), aller dans le dossier du projet, nommer *(...)_LOW.ply*, Save, puis cliquer sur *BINARY*;
 10. Fermer Cloud Compare.
@@ -338,13 +338,13 @@
 
 2. Charger les photos du dossier “*edof_exported*;
 3. Ajouter comme méthode *Add*;
-    - **Add:* → **_<Inc Nr:0>**
-    - *At index:* → **0**
-    - *Backwards* → ***yes***
-    - *Use regular expressions* → ***no***
-    - *Apply to:* → ***Name***
-4. *Batch mode* → ***Copy**
-5. *Output folder* → le dossier ***edof_exported_renamed***
+    - *Add:* → `_<Inc Nr:0>`
+    - *At index:* → `0`
+    - *Backwards* → `yes`
+    - *Use regular expressions* → `no`
+    - *Apply to:* → `Name`
+4. *Batch mode* → `Copy`
+5. *Output folder* → le dossier `edof_exported_renamed`
 6. Cliquer sur *Start batch*;
 7. Fermer Advanced Renamer.
 
@@ -353,14 +353,14 @@
 ### Dans Postshot
 
 1. Glisser-déposer les dossiers *sparse* et *edof_exported*;
-    - *Image selection* → ***Use All Images***
-    - *Camera Poses* → ***Import***
-    - *Radiance Field Profile* → ***Splat3***
-    - *Limit Image Size* → ***yes, 3840***
-    - *Max Splat Count* → ***3000***
-    - *Anti-Aliasing* → ***no***
-    - ***Start Training*** → ***yes***
-    - ***Stop Training after*** → ***yes, 30 kSteps***
+    - *Image selection* → `Use All Images`
+    - *Camera Poses* → `Import`
+    - *Radiance Field Profile* → `Splat3`
+    - *Limit Image Size* → `yes`, `3840`
+    - *Max Splat Count* → `3000`
+    - *Anti-Aliasing* → `no`
+    - ***Start Training*** → `yes`
+    - ***Stop Training after*** → `yes`, `30 kSteps`
 2. Cliquer sur *Import*;
 3. Une fois le training terminé, à l’aide du bouton de rotation à gauche et de la souris, ajuster le spécimen pour qu’il soit droit (à l’endroit) vis-à-vis de la fenêtre;
 4. Menu **File**, *Export Scene Rdnc Field* :
